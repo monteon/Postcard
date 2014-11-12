@@ -13,21 +13,17 @@
                         <viewControllerLayoutGuide type="bottom" id="zEQ-IP-2pc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Kyo-FF-8o5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="C8H-KC-c2X">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="C8H-KC-c2X">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="64" width="361" height="536"/>
                                 </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="C8H-KC-c2X"/>
-                            </mask>
-                        </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="C8H-KC-c2X"/>
@@ -44,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bx5-Iv-OMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="373.5" y="471"/>
+            <point key="canvasLocation" x="373" y="471"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -103,6 +99,15 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="80Z-e6-cPs"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOB-x2-obi">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="152" width="199" height="41"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +117,7 @@
                                 <exclude reference="RcL-tJ-o9s"/>
                                 <exclude reference="jFB-XC-fTR"/>
                                 <exclude reference="Upk-hp-Zjx"/>
+                                <exclude reference="eOB-x2-obi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,13 +127,16 @@
                                 <include reference="RcL-tJ-o9s"/>
                                 <include reference="jFB-XC-fTR"/>
                                 <include reference="Upk-hp-Zjx"/>
+                                <include reference="eOB-x2-obi"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="enterMessageTextField" destination="RcL-tJ-o9s" id="omt-Yo-vMb"/>
+                        <outlet property="enterNameTextField" destination="FBh-UG-JZu" id="IuH-YL-kcW"/>
                         <outlet property="mailButton" destination="Upk-hp-Zjx" id="LDZ-yb-wmF"/>
-                        <outlet property="messageLabel" destination="jFB-XC-fTR" id="Lpc-HL-iZr"/>
+                        <outlet property="messageLabel" destination="jFB-XC-fTR" id="Y7z-9U-MbB"/>
+                        <outlet property="messageLabel2" destination="eOB-x2-obi" id="0ob-Jh-nud"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

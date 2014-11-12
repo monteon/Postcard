@@ -1,0 +1,18 @@
+
+/* Class = "IBUITextField"; placeholder = "Enter name"; ObjectID = "FBh-UG-JZu"; */
+"FBh-UG-JZu.placeholder" = "Enter name";
+
+/* Class = "IBUITextField"; placeholder = "Enter message"; ObjectID = "RcL-tJ-o9s"; */
+"RcL-tJ-o9s.placeholder" = "Enter message";
+
+/* Class = "IBUIButton"; normalTitle = "Send Mail"; ObjectID = "Upk-hp-Zjx"; */
+"Upk-hp-Zjx.normalTitle" = "Send Mail";
+
+/* Class = "IBUIBarButtonItem"; title = "Message"; ObjectID = "VAp-3C-heY"; */
+"VAp-3C-heY.title" = "Message";
+
+/* Class = "IBUINavigationItem"; title = "Barcelona"; ObjectID = "fLV-Dq-knH"; */
+"fLV-Dq-knH.title" = "Barcelona";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "jFB-XC-fTR"; */
+"jFB-XC-fTR.text" = "Label";
